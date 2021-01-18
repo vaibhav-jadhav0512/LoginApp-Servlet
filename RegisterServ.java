@@ -11,7 +11,7 @@ public class RegisterServ extends HttpServlet
 		{
 			Class.forName("com.mysql.jdbc.Driver");
 			String url="jdbc:mysql://localhost:3306/mydb";
-			con=DriverManager.getConnection(url,"root","Vaibhav@123");
+			con=DriverManager.getConnection(url,"root","root");
 		}
 		catch(Exception ee)
 		{
