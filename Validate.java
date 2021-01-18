@@ -11,7 +11,7 @@ public class Validate {
             Class.forName("com.mysql.jdbc.Driver");
 
             //creating connection with the database
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb","root","Vaibhav@123");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb","root","root");
             PreparedStatement ps = con.prepareStatement("select * from register where loginId=? and password=?");
             ps.setString(1, email);
             ps.setString(2, pass);
